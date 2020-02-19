@@ -87,35 +87,59 @@ ul {
 .products .wines {
     display: grid;
     grid-template: 1fr/ repeat(3,1fr);
-    margin: 40px;
+    margin: 10% 5% 0 5%;
+ 
 
 }
 .wine {
     position: relative;
-    background-color:grey;
-    width: 100%;
-    height: 200px;
-
+    background-color: rgb(233, 233, 233);
+    /* width: 200px; */
+    height: 350px;
+    margin: 0 20px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
 }
 .products .wines img{
     width: 100%;
     position: absolute;
-    top: -80px;
+    top: -80px; 
+}
+/* .products .wines .wine h3{
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    bottom: 0;
+     */
+
+
+.prod-name{
+    position: absolute;
+    margin-top: 10px;
+    bottom: 0;
+    text-align: center;
 }
 
-
-.wine::before{
-    background-color:grey;
-
-    /* z-index: -1; */
-    /* margin-top: 20%; */
+.hover{
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    
 }
-.back {
-    /* position: absolute;
-    background-color:grey;
-    width: 100%;
-    height: 200px;
-    z-index: -1;
-    margin-top: 20%; */
+.rating li{
+float: left;
 }
-
+.rating li i{
+color: rgb(255, 217, 0);
+}
+.hover button{
+    background-color: rgb(160, 52, 160);
+    color: white;
+    border: none;
+    padding: 10px;
+    display: block;
+}
