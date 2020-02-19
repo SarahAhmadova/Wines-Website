@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.menu {
+    display: initial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    color: darkgray;
+    background-color: white;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    top: 0;
+    width: 100%;
+    font-size: 12px;
+    z-index: 1;
+    font-family: "montserrat";
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar ul>li {
+    float: left;
+    margin-right: 20px;
+}
+
+.container {
+    /* height: 1000px; */
+}
+
+.corusel {
+    margin: 0 80px;
+    /* max-width: 900px; */
+    /* display: block; */
+    position: relative;
+}
+
+.corusel img {
+    width: 100%;
+}
+
+.corusel .overlay {
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(169, 169, 169, 0.136);
+}
+
+.corusel .overlay .content {
+    display: flex;
+    justify-content: center;
+}
+
+.corusel .overlay .content h1 {
+    font-size: 80px;
+}
+
+.corusel .overlay .content p {
+    position: absolute;
+}
+
+.products .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.products .wines {
+    display: grid;
+    grid-template: 1fr/ repeat(3,1fr);
+    margin: 40px;
+
+}
+.wine {
+    position: relative;
+    /* margin: 10px; */
+}
+.products .wines img{
+    width: 100%;
+    position: absolute;
+}
+
+
+.wine::before{
+    background-color:grey;
+    width: 100%;
+    height: 200px;
+    /* z-index: -1; */
+    /* margin-top: 20%; */
+}
+.back {
+    /* position: absolute;
+    background-color:grey;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    margin-top: 20%; */
+}
+
