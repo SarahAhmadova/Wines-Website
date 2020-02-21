@@ -2,9 +2,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 .menu {
     display: initial;
 }
@@ -13,7 +15,6 @@ a {
     display: flex;
     justify-content: center;
     position: sticky;
-    color: darkgray;
     background-color: white;
     border-bottom: 1px solid rgb(224, 224, 224);
     top: 0;
@@ -22,7 +23,10 @@ a {
     z-index: 1;
     font-family: "montserrat";
 }
+.navbar a{
+    color: gray;
 
+}
 .logo {
     width: 100%;
     display: flex;
@@ -39,59 +43,55 @@ ul {
     margin-right: 20px;
 }
 
-.container {
-    /* height: 1000px; */
-}
-
-.corusel {
-    margin: 0 80px;
-    /* max-width: 900px; */
-    /* display: block; */
+#pg1 .corusel {
+    /* margin: 0 80px; */
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.corusel img {
-    width: 100%;
+#pg1 .corusel img {
+    width: 90%;
 }
 
-.corusel .overlay {
+#pg1 .corusel .overlay {
     position: absolute;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
     top: 0;
-    background-color: rgba(169, 169, 169, 0.136);
+    background-color: rgba(108, 108, 108, 0.197);
 }
 
-.corusel .overlay .content {
+#pg1 .corusel .overlay .content {
     display: flex;
     justify-content: center;
 }
 
-.corusel .overlay .content h1 {
+#pg1 .corusel .overlay .content h1 {
     font-size: 80px;
 }
 
-.corusel .overlay .content p {
+#pg1 .corusel .overlay .content p {
     position: absolute;
 }
 
-.products .header {
+ .header {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.products .wines {
-    display: grid;
-    grid-template: 1fr/ repeat(3,1fr);
-    margin: 10% 5% 0 5%;
- 
 
+ .products .wines {
+    display: grid;
+    grid-template: 1fr/ repeat(3, 1fr);
+    margin: 10% 5%;
 }
-.wine {
+
+ .wine {
     position: relative;
     background-color: rgb(233, 233, 233);
     /* width: 200px; */
@@ -101,45 +101,299 @@ ul {
     align-self: flex-end;
     justify-content: center;
 }
-.products .wines img{
+
+ .products .wines img {
     width: 100%;
     position: absolute;
-    top: -80px; 
+    top: -80px;
+    left: 0;
 }
-/* .products .wines .wine h3{
-    position: absolute;
-    display: flex;
-    align-self: flex-end;
-    justify-content: center;
-    bottom: 0;
-     */
 
-
-.prod-name{
+.prod-name {
     position: absolute;
     margin-top: 10px;
     bottom: 0;
     text-align: center;
 }
 
-.hover{
+ .hover {
     background-color: white;
     position: absolute;
     text-align: center;
     padding: 10px;
     bottom: 0;
-    
+    display: none;
 }
-.rating li{
-float: left;
+
+ .rating li {
+    float: left;
 }
-.rating li i{
-color: rgb(255, 217, 0);
+
+ .rating li i {
+    color: rgb(255, 217, 0);
 }
-.hover button{
+
+ .hover button {
     background-color: rgb(160, 52, 160);
     color: white;
     border: none;
     padding: 10px;
+}
+
+ .wine:hover .hover {
     display: block;
+}
+
+.welcome {
+    background-image: url(/Wines-Website/img/hero_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 20%;
+    height: 400px;
+    position: relative;
+}
+
+.welcome .content {
+    background-color: rgba(74, 74, 74, 0.292);
+    color: white;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkgray;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 3px solid #930077;
+}
+.person h3{
+    color: #c417a4;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 30px;
+}
+
+.news .col {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social li {
+    float: left;
+}
+
+.footer p>i {
+    color: tomato;
+    font-size: 14px;
+}
+
+.social a {
+    background-color: #930077;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .7s;
+}
+.social a:hover{
+    margin-top: -7px;
+    background-color: black;
+ 
+
+}
+
+/*      ABOUT        */
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+}
+
+.section>div {
+    margin: 20px;
+}
+.left {
+    position: relative;
+}
+.left img {
+    width: 100%;
+}
+
+.left .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
+    background-color: indigo;
+}
+
+#frame-container {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(99, 99, 99, 0.442);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#frame-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.left iframe {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+}
+.part3{
+    display: grid;
+    grid-template: 1fr/ repeat(3, 1fr);
+    padding: 30px;
+    background-color: rgb(241, 241, 241);
+}
+
+.part3>div{
+    display: flex;
+    margin-left: 30px;
+}
+.part3>div>div{
+    margin-left: 20px;
+}
+.part3 i{
+    margin-top: 30px;
+    color: indigo;
+}
+.part3 h1{
+    display: inline-block;
+}
+.contact-us {
+    background-color: #f8f9fa;
+}
+.contact-us>label{
+    font-size: 30px;
+    display: block;
+    padding: 5%;
+}
+.contact-us form{
+display: flex;
+flex-direction: column;
+padding: 0 5% 5% 5%;
+}
+.contact-us form>div{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 10px;
+}
+
+.contact-us form .msg{
+display: block;
+padding: 5px;
+
+
+ }
+ .contact-us form textarea{
+    width: 100%;
+    margin-right: 60px;
+ }
+.contact-us form div .cell {
+    display: block;
+    width: 100%;
+}
+.contact-us form  div  label{
+    font-size: 16px;
+    color: gray;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+.contact-us form div .cell input{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+}
+.contact-us form div .cell input:focus{
+    border: 1px solid #da12b5;
+    border-bottom:  1px solid rgb(204, 204, 204);
+    outline: none;
+}
+
+.contact-us button{
+    background-color: #930077;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 60px;
+    width: 150px;
+}
+.contact-us button:hover{
+    background-color: #60004e;
+}
+
+#shop-single .comments{
+    background-color: #930077;
+}
+#shop-single .header{
+    background-color: #930077;
+
 }
