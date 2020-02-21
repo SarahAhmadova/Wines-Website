@@ -164,7 +164,18 @@ ul {
     justify-content: center;
     align-items: center;
 }
+.welcome p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: cinzel;
+}
 
+.welcome h1{
+    margin: 0;
+    font-size: 4rem;
+    font-family: montserrat;
+    text-transform: uppercase;
+}
 .comments {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -323,6 +334,7 @@ ul {
 .part3 h1{
     display: inline-block;
 }
+
 .contact-us {
     background-color: #f8f9fa;
 }
@@ -344,14 +356,23 @@ padding: 0 5% 5% 5%;
 
 .contact-us form .msg{
 display: block;
-padding: 5px;
+padding: 10px;
 
 
  }
  .contact-us form textarea{
-    width: 100%;
-    margin-right: 60px;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+
  }
+.contact-us form textarea:focus{
+    border: 1px solid #da12b5;
+    border-bottom:  1px solid rgb(204, 204, 204);
+    outline: none;
+}
+
 .contact-us form div .cell {
     display: block;
     width: 100%;
