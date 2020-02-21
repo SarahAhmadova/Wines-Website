@@ -53,9 +53,9 @@
                 architecto, dolore saepe placeat culpa.</p>
         </div>
         <div class="left"><img src="img/hero_2.jpg" alt="">
-            <button class="play" onclick="cls()"><i class="fas fa-play"></i></button>
+            <button class="play" onclick="opn()"><i class="fas fa-play"></i></button>
             <div id="frame-container">
-                <button onclick="cls()" class="btn">butooom</button>
+                <button onclick="cls()" class="btn">X</button>
                 <iframe title="vimeo-player" src="https://player.vimeo.com/video/93951774" width="640" height="360"
                     frameborder="0" allowfullscreen></iframe></div>
         </div>
@@ -115,7 +115,9 @@
     </div>
 
     <script>
-
+function opn(){
+    document.getElementById("frame-container").style.display = "block";
+}
         function cls() {
             document.getElementById("frame-container").style.display = "none";
         }

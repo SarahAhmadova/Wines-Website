@@ -285,14 +285,18 @@ ul {
     transform: translate(-50%, -50%);
     border: none;
     border-radius: 50%;
-    background-color: indigo;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
 }
-
+.play i{
+    color: #930077;
+}
 #frame-container {
     height: 100%;
     width: 100%;
     display: none;
-    background-color: rgba(99, 99, 99, 0.442);
+    background-color: rgba(0, 0, 0, 0.653);
     position: fixed;
     top: 0;
     left: 0;
@@ -304,6 +308,10 @@ ul {
     top: 0;
     right: 0;
     z-index: 2;
+    background-color: rgb(86, 86, 86);
+    color: rgb(228, 228, 228);
+    border: none;
+    padding: 10px;
 }
 
 .left iframe {
